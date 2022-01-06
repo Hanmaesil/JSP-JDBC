@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style>
+table {
+	border-collapse: collapse; /* 테이블 깔끔하게 만들기 위한 스타일 */
+}
+
+input[type='text'], input[type='password'] { /* 타입 선택자 사용  */
+	border: 0;   /* 테이블 깔끔하게 만들기 위한 스타일 */
+}
+</style>
+</head>
+<body>
+	<h1>로그인 페이지</h1>
+
+	<form action="LoginCheck.jsp" method="post">
+		<table border="1">
+			<tr>
+				<td>ID:</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>PW:</td>
+				<td><input type="password" name="pw"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="로그인"></td>
+
+			</tr>
+
+
+		</table>
+
+	</form>
+
+
+</body>
+</html>
