@@ -48,6 +48,7 @@ String email = (String)application.getAttribute("email");
 	<!-- 
 		서버영역에 저장된 값을 접근할 때 정확히 해당영역을 명시해서 접근해야 한다.
 		형식 >> 서버영역Scope.속성이름
+		* 서버영역Scope를 붙여주지 않으면 page -> request -> session -> application 순으로 검색해서 접근하게 된다
 	  -->
 		<td>${ requestScope.id }</td>
 		<td>${ requestScope.pw }</td>
